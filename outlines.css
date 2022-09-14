@@ -1,0 +1,68 @@
+*{
+    font-family: "Bodoni 72 Oldstyle";
+}
+#head{
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 1px;
+    font-size: 50px;
+}
+.nav{
+    color: white;
+    margin-left: 689px;
+    margin-bottom: 100px;
+}
+.nav li{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 19px;
+}
+.block1{
+    vertical-align: middle;
+   }
+H1 {
+    font-size: 200%;
+    text-align: center;
+}
+P {
+    padding-left: 20px;
+}
+.block2{
+    font-size: 20px;
+    margin-left: 750px;
+    margin-bottom: 5px;
+}
+#aboutMe{
+    margin-left: 730px;
+    margin-bottom: 50px;
+    font-size: 19px;
+}
+.workAndEducation{
+    margin-left: 150px;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.block3{
+    display: inline-block;
+    background-color: #C4C8FD;
+    margin-left: 50px;
+    font-size: 19px;
+}
+.language{
+    display: inline-block;
+    margin-left: 730px;
+    font-size: 20px;
+    margin-bottom: 55px;
+}
+.language p{
+    margin-bottom: 5px;
+}
+.expectationOfWork{
+    display: inline-block;
+    margin-left: 70px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:  black;
+    font-size: 19px;
+}
