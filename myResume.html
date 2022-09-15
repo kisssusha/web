@@ -4,31 +4,46 @@
     <meta charset="UTF-8">
     <title>Resume</title>
     <link href="outlines.css" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
 </head>
 <body>
 <header>
+    <div class="container">
     <h1 id="head">Резюме</h1>
+    </div>
+
+ <img class="rightimg" src="photoForResume.jpeg" height="370" width="370">
 </header>
 <main>
     <article>
+        <div class="container">
         <h6 class="block2">
             Немного обо мне
         </h6>
         <p id="aboutMe">Меня зовут Ксения Колпикова, 20 лет.</p>
+        </div>
     </article>
     <section>
+        <div class="container">
         <h6 class="block2">
             Мои контакты
         </h6>
         <ul class="nav">
             <li>
-                <nav><a href="https://t.me/kisssusha">@kisssusha</a></nav>
+                <nav>
+                    <a href="https://t.me/kisssusha">
+                        <img src="telegram.png" height="40" width="40" class="picture">
+                    </a>
+                </nav>
             </li>
             <li>
-                <nav><a href="https://github.com/kisssusha">github</a></nav>
+                <nav><a href="https://github.com/kisssusha">
+                    <img src="GITHUB.png" height="40" width="40" class="picture">
+                </a></nav>
             </li>
         </ul>
-        <h6 class="workAndEducation">
+        </div>
+        <h6 class="workAndEducation" id="work">
             Работа и образование
         </h6>
         <ol start="1" class="block3">
@@ -92,14 +107,14 @@
         <h2 class="block2">
             void языкиПрограммирования(){
         </h2>
-        <span class="language">
-        <p>
-            Java;
-        </p>
-        <p>C#;</p>
-        <p>}</p>
-            </span>
-        <h2 class="workAndEducation">
+        <div class="language2">
+            <p>
+                Java;
+            </p>
+            <p>C#;</p>
+            <p>}</p>
+        </div>
+        <h2 class="workAndEducation" id="expectations">
             Мои ожидания от работы
         </h2>
 

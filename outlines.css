@@ -1,10 +1,11 @@
 *{
     font-family: "Bodoni 72 Oldstyle";
+    color: #4D220E;
 }
 #head{
     margin-right: 150px;
-    margin-top: 100px;
-    margin-bottom: 1px;
+    margin-top: 50px;
+    margin-bottom: 0px;
     font-size: 50px;
 }
 .nav{
@@ -31,7 +32,8 @@ P {
 .block2{
     font-size: 20px;
     margin-left: 750px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    margin-top: 50px;
 }
 #aboutMe{
     margin-left: 730px;
@@ -43,11 +45,15 @@ P {
     font-size: 25px;
     margin-bottom: 5px;
 }
+#work{
+    margin-top: 170px;
+}
 .block3{
     display: inline-block;
     background-color: #C4C8FD;
     margin-left: 50px;
     font-size: 19px;
+    padding-right: 150px;
 }
 .language{
     display: inline-block;
@@ -55,8 +61,14 @@ P {
     font-size: 20px;
     margin-bottom: 55px;
 }
-.language p{
-    margin-bottom: 5px;
+.language2{
+    display: inline-block;
+    margin-left: 730px;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.language2 p{
+    margin-bottom: 0px;
 }
 .expectationOfWork{
     display: inline-block;
@@ -65,4 +77,20 @@ P {
     border-width: 2px;
     border-color:  black;
     font-size: 19px;
+}
+body{
+    background-color: #F5E6CB;
+}
+.rightimg  {  float:left;
+    margin-top:0px;
+    margin-left:230px ;
+}
+#expectations{
+    margin-top: 0px;
+}
+.picture{
+    transition: 1s;
+}
+.picture:hover{
+    transform: scale(1.2);
 }
