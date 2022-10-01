@@ -139,7 +139,6 @@ P {
         margin-top: 2%;
         margin-left: 10%;
         margin-right: 10%;
-        padding-bottom: 1%;
     }
     .headersRight {
         margin-left: 20%;
@@ -155,29 +154,29 @@ P {
     .mySkills{
         display: block;
         margin-left: 5%;
-        padding-right: 8%;
+        padding-right: 6%;
     }
     .textOnMyPhoto{
         position: relative;
-        margin-left: 30%;
+        margin-left: 25%;
         width: 40%;
     }
     .language{
         display: block;
-        margin-left: 8%;
+        margin-left: 10%;
         font-size: 20px;
         margin-bottom: 55px;
     }
     .languageOfProgramming{
         display: block;
-        margin-left: 8%;
+        margin-left: 10%;
         font-size: 20px;
         margin-bottom: 0%;
     }
     .nav li{
         display: inline-block;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 2%;
+        padding-right: 2%;
         font-size: 19px;
     }
     .nav{
