@@ -137,6 +137,7 @@ P {
         display: block;
         background-color: #F5E6CB;
         margin: 2% 10%;
+        padding-bottom: 1%;
     }
     .headersRight {
         margin-left: 20%;
@@ -152,7 +153,7 @@ P {
     .mySkills{
         display: block;
         margin-left: 5%;
-        padding-right: 3%;
+        padding-right: 1%;
         padding-bottom: 1%;
         padding-top: 1%;
     }
@@ -183,8 +184,8 @@ P {
         margin-left: 8%;
     }
     .myContactsPictures{
-        height: 10%;
-        width: 10%;
+        height: 6%;
+        width: 6%;
     }
     #aboutMe{
         margin-left: 8%;
