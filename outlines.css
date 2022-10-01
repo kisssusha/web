@@ -139,9 +139,10 @@ P {
         margin-top: 2%;
         margin-left: 10%;
         margin-right: 10%;
+        padding-bottom: 2%;
     }
     .headersRight {
-        margin-left: 15%;
+        margin-left: 20%;
         margin-bottom: 0%;
         margin-top: 4%;
     }
@@ -154,22 +155,22 @@ P {
     .mySkills{
         display: block;
         margin-left: 5%;
-        padding-right: 10%;
+        padding-right: 8%;
     }
     .textOnMyPhoto{
         position: relative;
-        margin-left: 40%;
+        margin-left: 35%;
         width: 40%;
     }
     .language{
         display: block;
-        margin-left: 5%;
+        margin-left: 6%;
         font-size: 20px;
         margin-bottom: 55px;
     }
     .languageOfProgramming{
         display: block;
-        margin-left: 5%;
+        margin-left: 6%;
         font-size: 20px;
         margin-bottom: 0%;
     }
@@ -178,6 +179,8 @@ P {
         padding-left: 20px;
         padding-right: 20px;
         font-size: 19px;
+    }
+    .nav{
         margin-left: 8%;
     }
     #aboutMe{
