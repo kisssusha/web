@@ -136,7 +136,7 @@ P {
     .plainBackground{
         display: block;
         background-color: #F5E6CB;
-        padding-right: 1%;
+        padding-right: 5%;
         margin-top: 1%;
         margin-left: 8%;
     }
@@ -148,17 +148,41 @@ P {
     .myPhoto{
         float: none;
         padding-top: 2%;
-        height: 30%;
-        width: 30%;
+        height: 100%;
+        width: 100%;
     }
     .mySkills{
-        margin-left: 45%;
+        display: block;
+        margin-left: 5%;
         padding-right: 12%;
     }
     .textOnMyPhoto{
         position: relative;
         margin-left: 10%;
         width: 40%;
+    }
+    .language{
+        display: block;
+        margin-left: 60%;
+        font-size: 20px;
+        margin-bottom: 55px;
+    }
+    .languageOfProgramming{
+        display: block;
+        margin-left: 60%;
+        font-size: 20px;
+        margin-bottom: 0%;
+    }
+    .nav li{
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 19px;
+    }
+    #aboutMe{
+        margin-left: 60%;
+        margin-bottom: 5%;
+        font-size: 19px;
     }
     #head {
         position: absolute;
