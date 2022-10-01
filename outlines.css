@@ -152,7 +152,7 @@ P {
     }
     .mySkills{
         display: block;
-        margin-left: 5%;
+        margin-left: 4%;
         padding-right: 1%;
         padding-bottom: 1%;
         padding-top: 1%;
@@ -182,10 +182,6 @@ P {
     }
     .nav{
         margin-left: 8%;
-    }
-    .myContactsPictures{
-        height: 6%;
-        width: 6%;
     }
     #aboutMe{
         margin-left: 8%;
