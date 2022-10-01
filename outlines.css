@@ -139,7 +139,7 @@ P {
         margin-top: 2%;
         margin-left: 10%;
         margin-right: 10%;
-        padding-bottom: 2%;
+        padding-bottom: 1%;
     }
     .headersRight {
         margin-left: 20%;
@@ -159,23 +159,23 @@ P {
     }
     .textOnMyPhoto{
         position: relative;
-        margin-left: 35%;
+        margin-left: 30%;
         width: 40%;
     }
     .language{
         display: block;
-        margin-left: 6%;
+        margin-left: 8%;
         font-size: 20px;
         margin-bottom: 55px;
     }
     .languageOfProgramming{
         display: block;
-        margin-left: 6%;
+        margin-left: 8%;
         font-size: 20px;
         margin-bottom: 0%;
     }
     .nav li{
-        display: block;
+        display: inline-block;
         padding-left: 20px;
         padding-right: 20px;
         font-size: 19px;
