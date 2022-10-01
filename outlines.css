@@ -1,100 +1,167 @@
-*{
-    font-family: "Bodoni 72 Oldstyle";
+* {
+    font-family: "Bodoni 72 Smallcaps";
     color: #4D220E;
 }
-#head{
-    margin-right: 150px;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    font-size: 50px;
+
+body {
+    background-image: url("back.jpg");
 }
-.nav{
+
+H6 {
+    font-weight: 300;
+    font-size: 26px;
+}
+
+P {
+    padding-left: 20px;
+}
+
+.nav {
     color: white;
     margin-left: 689px;
     margin-bottom: 100px;
 }
-.nav li{
+
+.nav li {
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 19px;
 }
-.myPersonalityTraits{
+
+.textOnMyPhoto {
+    position: relative;
+    width: 400px;
+    margin-left: 20%;
+}
+
+.myPersonalityTraits {
     vertical-align: middle;
-   }
-H1 {
-    font-size: 200%;
-    text-align: center;
 }
-P {
-    padding-left: 20px;
-}
-.headersRight{
-    font-size: 20px;
+
+.headersRight {
     margin-left: 750px;
     margin-bottom: 0px;
     margin-top: 50px;
 }
-#aboutMe{
-    margin-left: 730px;
-    margin-bottom: 50px;
-    font-size: 19px;
-}
-.workAndEducation{
+
+.workAndEducation {
     margin-left: 150px;
-    font-size: 25px;
     margin-bottom: 5px;
 }
-#work{
-    margin-top: 170px;
-}
-.mySkills{
+
+.mySkills {
     display: inline-block;
     background-color: #C4C8FD;
     margin-left: 50px;
     font-size: 19px;
     padding-right: 150px;
 }
-.language{
+
+.language {
     display: inline-block;
     margin-left: 730px;
     font-size: 20px;
     margin-bottom: 55px;
 }
-.languageOfProgramming{
+
+.languageOfProgramming {
     display: inline-block;
     margin-left: 730px;
     font-size: 20px;
     margin-bottom: 0px;
 }
-.languageOfProgramming p{
+
+.languageOfProgramming p {
     margin-bottom: 0px;
 }
-.expectationOfWork{
+
+.expectationOfWork {
     display: inline-block;
     margin-left: 70px;
     border-style: solid;
     border-width: 2px;
-    border-color:  black;
+    border-color: black;
     font-size: 19px;
 }
-body{
-    background-color: #F5E6CB;
+
+.myPhoto {
+    float: left;
+    height: 370px;
+    width: 370px;
+    padding-top: 30px;
 }
-.myPhoto  {  float:left;
-    margin-top:0px;
-    margin-left:230px ;
-    height:370px;
-    width:370px;
-}
-#expectations{
-    margin-top: 0px;
-}
-.myContactsPictures{
+
+.myContactsPictures {
     height: 40px;
     width: 40px;
     transition: 1s;
 }
-.myContactsPictures:hover{
+
+.myContactsPictures:hover {
     transform: scale(1.2);
+}
+
+.plainBackground {
+    display: inline-block;
+    background-color: #F5E6CB;
+    padding-right: 5px;
+    margin-left: 100px;
+    margin-top: 1%;
+}
+
+#head {
+    position: absolute;
+    font-size: 260%;
+    font-weight: 300;
+    top: -0px;
+    right: -20px;
+    margin: 0;
+}
+
+#expectations {
+    margin-top: 0px;
+}
+
+#work {
+    margin-top: 170px;
+}
+
+#aboutMe {
+    margin-left: 730px;
+    margin-bottom: 50px;
+    font-size: 19px;
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
+    .plainBackground{
+        display: block;
+        background-color: #F5E6CB;
+        padding-right: 1%;
+        margin-top: 1%;
+        margin-left: 8%;
+    }
+    .headersRight {
+        margin-left: 50%;
+        margin-bottom: 0%;
+        margin-top: 4%;
+    }
+    .myPhoto{
+        float: none;
+        padding-top: 2%;
+        height: 30%;
+        width: 30%;
+    }
+    .mySkills{
+        margin-left: 45%;
+        padding-right: 12%;
+    }
+    .textOnMyPhoto{
+        position: relative;
+        margin-left: 10%;
+        width: 40%;
+    }
+    #head {
+        position: absolute;
+        font-size: 200%;
+    }
 }
