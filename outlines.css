@@ -108,8 +108,22 @@ P {
     padding-right: 5px;
     margin-left: 100px;
     margin-top: 1%;
+    padding-bottom: 2%;
+    margin-bottom: 2%;
 }
-
+#grid {
+    display: grid;
+    margin-left: 38%;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 10px;
+}
+#grid > div {
+    font-size: 19px;
+    padding: .5em;
+    background: #C4C8FD;
+    text-align: center;
+}
 #head {
     position: absolute;
     font-size: 260%;
