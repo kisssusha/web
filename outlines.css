@@ -1,5 +1,5 @@
 * {
-    font-family: "Bodoni 72 Smallcaps";
+    font-family: "Bodoni 72 Smallcaps", serif;
     color: #4D220E;
 }
 
@@ -210,7 +210,6 @@ P {
         margin-top: 0%;
     }
     #grid{
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 35%;
     }
 }
