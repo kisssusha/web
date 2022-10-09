@@ -4,71 +4,82 @@
 }
 
 body {
+
+    padding-top: 30px;
     background-image: url("back.jpg");
 }
 
 H6 {
     font-weight: 300;
-    font-size: 26px;
+    font-size: 25px;
 }
 
-P {
-    padding-left: 20px;
+header {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me-and-contacts {
+    margin-left: -90%;
 }
 
 .nav {
-    color: white;
-    margin-left: 689px;
-    margin-bottom: 100px;
-}
-
-.nav li {
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 19px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+    padding: 0;
 }
 
 .textOnMyPhoto {
     position: relative;
-    width: 400px;
-    margin-left: 20%;
+    width: 50%;
+}
+
+.textOnMyPhoto h1 {
+    position: absolute;
+    font-weight: 300;
+    top: 3%;
+    right: -5%;
+    margin: 0;
+    font-size: 3.5vw;
+    line-height: 0.7em;
 }
 
 .myPersonalityTraits {
     vertical-align: middle;
 }
 
-.headersRight {
-    margin-left: 750px;
-    margin-bottom: 0px;
-    margin-top: 50px;
-}
-
-.workAndEducation {
-    margin-left: 150px;
-    margin-bottom: 5px;
-}
-
-.mySkills {
+.mySkills ol {
     display: inline-block;
     background-color: #C4C8FD;
     margin-left: 50px;
-    font-size: 19px;
     padding-right: 150px;
+}
+
+.mySkills h6 {
+    margin-top: 17%;
+    margin-left: 15%;
+    margin-bottom: -1%;
 }
 
 .language {
     display: inline-block;
     margin-left: 730px;
-    font-size: 20px;
     margin-bottom: 55px;
+}
+
+.language h6 {
+    margin-left: 4%;
+    margin-bottom: 0px;
+    margin-top: 10%;
 }
 
 .languageOfProgramming {
     display: inline-block;
     margin-left: 730px;
-    font-size: 20px;
     margin-bottom: 0px;
 }
 
@@ -76,25 +87,38 @@ P {
     margin-bottom: 0px;
 }
 
+.languageOfProgramming h6 {
+    margin-left: 4%;
+    margin-bottom: 0px;
+    margin-top: 10%;
+}
+
 .expectationOfWork {
     display: inline-block;
     margin-left: 70px;
+}
+
+.expectationOfWork h6 {
+    margin-left: 15%;
+}
+
+.expectationOfWork ul {
     border-style: solid;
     border-width: 2px;
     border-color: black;
-    font-size: 19px;
+    margin-top: -6%;
 }
 
 .myPhoto {
-    float: left;
-    height: 370px;
-    width: 370px;
+    height: 65%;
+    width: 65%;
     padding-top: 30px;
+    margin-left: 30%;
 }
 
 .myContactsPictures {
-    height: 40px;
-    width: 40px;
+    width: 5vw;
+    height: 5vw;
     transition: 1s;
 }
 
@@ -103,14 +127,13 @@ P {
 }
 
 .plainBackground {
-    display: inline-block;
+    display: block;
     background-color: #F5E6CB;
-    padding-right: 5px;
-    margin-left: 100px;
-    margin-top: 1%;
+    padding-right: 3%;
     padding-bottom: 2%;
-    margin-bottom: 2%;
+    margin: 1% 3% 2% 5%;
 }
+
 #grid {
     display: grid;
     margin-left: 38%;
@@ -118,98 +141,143 @@ P {
     grid-template-columns: repeat(2, minmax(40px, 150px));
     grid-gap: 10px;
 }
+
 #grid > div {
     font-size: 19px;
     padding: .5em;
     background: #C4C8FD;
     text-align: center;
 }
-#head {
-    position: absolute;
-    font-size: 260%;
-    font-weight: 300;
-    top: -0px;
-    right: -20px;
-    margin: 0;
-}
 
-#expectations {
-    margin-top: 0px;
-}
-
-#work {
-    margin-top: 170px;
-}
-
-#aboutMe {
-    margin-left: 730px;
-    margin-bottom: 50px;
-    font-size: 19px;
-}
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
-    .plainBackground{
+@media only screen and (max-width: 520px), only screen and (max-device-width: 480px) {
+    .plainBackground {
         display: block;
         background-color: #F5E6CB;
         margin: 2% 10%;
         padding-bottom: 1%;
     }
-    .headersRight {
-        margin-left: 20%;
-        margin-bottom: 0%;
-        margin-top: 4%;
+
+    .myPhoto {
+        margin-top: 3%;
+        height: 160%;
+        width: 160%;
     }
-    .myPhoto{
-        float: none;
-        padding-top: 5%;
-        height: 110%;
-        width: 110%;
+    header{
+        display: inline-block;
     }
-    .mySkills{
-        display: block;
+    header section{
+        margin-top: -5%;
+    }
+    .mySkills ol {
+        display: inline-block;
         margin-left: 4%;
-        padding-right: 1%;
+        padding-right: 0%;
         padding-bottom: 1%;
-        padding-top: 1%;
+        margin-top: 2%;
     }
-    .textOnMyPhoto{
+
+
+    .textOnMyPhoto {
         position: relative;
-        margin-left: 25%;
-        width: 40%;
+        margin-left: 10%;
     }
-    .language{
+    .textOnMyPhoto h1{
+        font-size: 30px;
+    }
+
+    .language {
+        display: block;
+        margin-left: 10%;
+        margin-bottom: 55px;
+    }
+
+    .languageOfProgramming {
+        display: block;
+        margin-left: 10%;
+        margin-bottom: 0%;
+        word-break: break-all;
+    }
+
+    #grid {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media only screen and (max-width: 724px) {
+    .language {
         display: block;
         margin-left: 10%;
         font-size: 20px;
         margin-bottom: 55px;
     }
-    .languageOfProgramming{
+
+    .myPhoto {
+        padding-top: 6%;
+        height: 90%;
+        width: 90%;
+    }
+    header {
+        display: block;
+    }
+    header section{
+        margin-left: 30%;
+    }
+
+    .languageOfProgramming {
         display: block;
         margin-left: 10%;
         font-size: 20px;
         margin-bottom: 0%;
     }
-    .nav li{
-        display: inline-block;
-        padding-left: 2%;
-        padding-right: 2%;
-        font-size: 19px;
+
+    .plainBackground {
+        display: block;
+        background-color: #F5E6CB;
+        margin: 2% 10%;
+        padding-bottom: 1%;
     }
-    .nav{
-        margin-left: 8%;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .language {
+        display: block;
+        margin-left: 40%;
+        font-size: 20px;
+        margin-bottom: 55px;
     }
-    #aboutMe{
-        margin-left: 8%;
-        margin-bottom: 5%;
-        font-size: 19px;
+
+    .languageOfProgramming {
+        display: block;
+        margin-left: 40%;
+        font-size: 20px;
+        margin-bottom: 0%;
     }
-    #head {
-        position: absolute;
-        font-size: 250%;
+
+    .about-me-and-contacts p {
+        margin-left: 20%;
     }
-    #work{
-        margin-top: 0%;
+
+    .about-me-and-contacts h6 {
+        margin-left: 20%;
+        margin-bottom: -3%;
     }
-    #grid{
-        margin-left: 35%;
+    .about-me-and-contacts ul{
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 1162px) {
+    .language {
+        margin-left: 45%;
+    }
+
+    .languageOfProgramming {
+        margin-left: 45%;
+    }
+
+    .about-me-and-contacts {
+        margin-left: -55%;
     }
 }
