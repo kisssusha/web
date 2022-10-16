@@ -149,7 +149,7 @@ header {
     text-align: center;
 }
 
-@media only screen and (max-width: 520px), only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 648px), only screen and (max-device-width: 480px) {
     .plainBackground {
         display: block;
         background-color: #F5E6CB;
@@ -192,8 +192,7 @@ header {
     }
 
     .languageOfProgramming {
-        display: block;
-        margin-left: 10%;
+        display: inline-block;
         margin-bottom: 0%;
         word-break: break-all;
     }
