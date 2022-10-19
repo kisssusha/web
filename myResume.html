@@ -5,6 +5,7 @@
     <title>Resume</title>
     <link href="outlines.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
+
 </head>
 <body>
 <div class="plainBackground">
@@ -12,7 +13,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <div class="textOnMyPhoto">
             <h1>Резюме</h1>
-            <img class="myPhoto" src="photoForResume.jpeg">
+            <img class="myPhoto" src="photoForResume.jpeg" alt="photo">
         </div>
         <section>
             <div class="about-me-and-contacts">
@@ -29,13 +30,13 @@
                     <li>
                         <nav>
                             <a href="https://t.me/kisssusha">
-                                <img src="telegram.png" class="myContactsPictures">
+                                <img src="telegram.png" class="myContactsPictures" alt="photo">
                             </a>
                         </nav>
                     </li>
                     <li>
                         <nav><a href="https://github.com/kisssusha">
-                            <img src="GITHUB.png" class="myContactsPictures">
+                            <img src="github.png" class="myContactsPictures" alt="photo">
                         </a></nav>
                     </li>
                 </ul>
@@ -159,4 +160,15 @@
     </main>
 </div>
 </body>
+
+<script>
+    window.onload = function () {
+        alert('Страница загружена');
+    }
+</script>
+<script>
+    window.onload = function () {
+        console.log((new Date).getTime() - window.startTime);
+    }
+</script>
 </html>
