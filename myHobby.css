@@ -4,7 +4,6 @@ html {
 }
 
 
-
 *,
 *::after,
 *::before {
@@ -12,9 +11,11 @@ html {
     padding: 0;
     box-sizing: inherit;
 }
-body{
+
+body {
     background-color: #DC0055;
 }
+
 .menu a {
     text-decoration: none;
     color: antiquewhite;
@@ -23,10 +24,12 @@ body{
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
 .navigates {
     scroll-margin-top: 160px;
     background-color: #EE6B9E;
 }
+
 .menu {
     font-size: 20px;
     margin-left: 9%;
@@ -36,41 +39,48 @@ body{
 .menu a:hover {
     color: #4D220E;
 }
+
 .gallery {
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 10vw);
     grid-gap: 15px;
-    list-style:none;
+    list-style: none;
     text-align: center;
     padding: 0;
 }
-.gallery figure h3{
+
+.gallery figure h3 {
     color: #fff;
     margin: 5px;
 }
-.gallery figure p{
+
+.gallery figure p {
     color: #fff;
     margin: 5px;
 }
+
 .gallery__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 .gallery__item--1 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
 }
+
 .gallery__item--2 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
 }
+
 .gallery__item--3 {
     grid-column-start: 5;
     grid-column-end: 9;
@@ -91,18 +101,21 @@ body{
     grid-row-start: 6;
     grid-row-end: 9;
 }
+
 .gallery__item--6 {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 9;
 }
+
 .container {
     width: 80%;
     margin: 2rem auto;
 
 }
-.gallery figure{
+
+.gallery figure {
     position: relative;
     width: 100%; /* Задаем ширину элемента списка с картинкой*/
     display: inline-block;
@@ -120,12 +133,14 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
 .gallery figure:hover > div.effect-to-top {
     position: absolute;
     overflow: hidden;
     top: 0;
     left: 0;
 }
+
 .gallery figure div.effect-to-top {
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
@@ -133,6 +148,7 @@ body{
     color: #fff;
     transform: translate(0px, 250px) rotate(0deg); /* Направление выезжающей панели */
 }
+
 .gallery figure:hover div.effect-to-top {
     opacity: 1;
     transform: translate(0px, 0px) rotate(0deg);
