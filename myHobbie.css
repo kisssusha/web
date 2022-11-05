@@ -1,0 +1,139 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body{
+    background-color: #DC0055;
+}
+.menu a {
+    text-decoration: none;
+    color: antiquewhite;
+    text-transform: uppercase;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.navigates {
+    scroll-margin-top: 160px;
+    background-color: #EE6B9E;
+}
+.menu {
+    font-size: 20px;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.menu a:hover {
+    color: #4D220E;
+}
+.gallery {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 10vw);
+    grid-gap: 15px;
+    list-style:none;
+    text-align: center;
+    padding: 0;
+}
+.gallery figure h3{
+    color: #fff;
+    margin: 5px;
+}
+.gallery figure p{
+    color: #fff;
+    margin: 5px;
+}
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+.container {
+    width: 80%;
+    margin: 2rem auto;
+
+}
+.gallery figure{
+    position: relative;
+    width: 100%; /* Задаем ширину элемента списка с картинкой*/
+    display: inline-block;
+    background-color: #fff;
+    margin: 0;
+    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.gallery figure > div.effect-to-top {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.gallery figure:hover > div.effect-to-top {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.gallery figure div.effect-to-top {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Фон блока при наведении */
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+    transform: translate(0px, 250px) rotate(0deg); /* Направление выезжающей панели */
+}
+.gallery figure:hover div.effect-to-top {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}

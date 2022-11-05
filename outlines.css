@@ -48,6 +48,30 @@ header {
     line-height: 0.7em;
 }
 
+.menu a {
+    text-decoration: none;
+    color: antiquewhite;
+    text-transform: uppercase;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover {
+    color: #4D220E;
+}
+
+.navigates {
+    scroll-margin-top: 160px;
+    background-color: #C4C8FD;
+}
+
+.menu {
+    font-size: 20px;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
 .myPersonalityTraits {
     vertical-align: middle;
 }
@@ -73,26 +97,29 @@ header {
 
 .language h6 {
     margin-left: 4%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 10%;
 }
 
 .languageOfProgramming {
     display: inline-block;
     margin-left: 730px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .languageOfProgramming p {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .languageOfProgramming h6 {
     margin-left: 4%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 10%;
 }
-
+#load_time{
+    margin-right: 40%;
+    margin-left: 40%;
+}
 .expectationOfWork {
     display: inline-block;
     margin-left: 70px;
@@ -134,20 +161,6 @@ header {
     margin: 1% 3% 2% 5%;
 }
 
-#grid {
-    display: grid;
-    margin-left: 38%;
-    grid-template-rows: 50px 50px 50px;
-    grid-template-columns: repeat(2, minmax(40px, 150px));
-    grid-gap: 10px;
-}
-
-#grid > div {
-    font-size: 19px;
-    padding: .5em;
-    background: #C4C8FD;
-    text-align: center;
-}
 
 @media only screen and (max-width: 648px), only screen and (max-device-width: 480px) {
     .plainBackground {
@@ -162,16 +175,19 @@ header {
         height: 160%;
         width: 160%;
     }
-    header{
+
+    header {
         display: inline-block;
     }
-    header section{
+
+    header section {
         margin-top: -5%;
     }
+
     .mySkills ol {
         display: inline-block;
         margin-left: 4%;
-        padding-right: 0%;
+        padding-right: 0;
         padding-bottom: 1%;
         margin-top: 2%;
     }
@@ -181,7 +197,8 @@ header {
         position: relative;
         margin-left: 10%;
     }
-    .textOnMyPhoto h1{
+
+    .textOnMyPhoto h1 {
         font-size: 30px;
     }
 
@@ -193,13 +210,8 @@ header {
 
     .languageOfProgramming {
         display: inline-block;
-        margin-bottom: 0%;
+        margin-bottom: 0;
         word-break: break-all;
-    }
-
-    #grid {
-        margin-left: 20%;
-        margin-right: 20%;
     }
 }
 
@@ -216,10 +228,12 @@ header {
         height: 90%;
         width: 90%;
     }
+
     header {
         display: block;
     }
-    header section{
+
+    header section {
         margin-left: 30%;
     }
 
@@ -227,7 +241,7 @@ header {
         display: block;
         margin-left: 10%;
         font-size: 20px;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 
     .plainBackground {
@@ -251,7 +265,7 @@ header {
         display: block;
         margin-left: 40%;
         font-size: 20px;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 
     .about-me-and-contacts p {
@@ -262,7 +276,8 @@ header {
         margin-left: 20%;
         margin-bottom: -3%;
     }
-    .about-me-and-contacts ul{
+
+    .about-me-and-contacts ul {
         margin-left: 20%;
     }
 }

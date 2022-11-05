@@ -5,18 +5,25 @@
     <title>Resume</title>
     <link href="outlines.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
-
+    <script src="JS/loadSite.js"></script>
 </head>
 <body>
+<nav class="menu">
+    <a href="#about-me">Обо мне&ensp;</a>
+    <a href="#work-and-education">&ensp;Работа и образование&ensp;</a>
+    <a href="#expectationOfWork">&ensp;Ожидания от работы&ensp;</a>
+    <a href="myHobbie.html#hobbie">&ensp;Xобби&ensp;</a>
+</nav>
 <div class="plainBackground">
     <header>
         <meta name="viewport" content="width=device-width, user-scalable=no">
+
         <div class="textOnMyPhoto">
             <h1>Резюме</h1>
             <img class="myPhoto" src="photoForResume.jpeg" alt="photo">
         </div>
         <section>
-            <div class="about-me-and-contacts">
+            <div id="about-me" class="about-me-and-contacts ">
                 <h6>
                     Немного обо мне
                 </h6>
@@ -45,7 +52,7 @@
     </header>
     <main>
         <section>
-            <div class="mySkills">
+            <div id="work-and-education" class="mySkills">
                 <h6>
                     Работа и образование
                 </h6>
@@ -119,7 +126,7 @@
                     <p>}</p>
                 </div>
             </div>
-            <div class="expectationOfWork">
+            <div id="expectationOfWork" class="expectationOfWork">
                 <h6>
                     Мои ожидания от работы
                 </h6>
@@ -139,7 +146,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="language">
+            <div id="language" class="language">
                 <h6>
                     Языки
                 </h6>
@@ -147,28 +154,12 @@
                     Английский на уровне В1 (умение читать документации).
                 </p>
             </div>
-            <div id="grid">
-                <div>Инструменты</div>
-                <div>% Владения</div>
-                <div>Intellij IDEA</div>
-                <div>70%</div>
-                <div>Rider</div>
-                <div>60%</div>
-            </div>
         </section>
-
+        <div id="load_time"></div>
+        <script src="JS/navigate_links.js"></script>
     </main>
 </div>
+
 </body>
 
-<script>
-    window.onload = function () {
-        alert('Страница загружена');
-    }
-</script>
-<script>
-    window.onload = function () {
-        console.log((new Date).getTime() - window.startTime);
-    }
-</script>
 </html>
