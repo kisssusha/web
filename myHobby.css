@@ -31,9 +31,10 @@ body {
 }
 
 .menu {
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 9%;
     margin-right: 9%;
+    margin-top: 3%;
 }
 
 .menu a:hover {
@@ -44,7 +45,7 @@ body {
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 10vw);
+    grid-template-rows: repeat(10, 10vw);
     grid-gap: 15px;
     list-style: none;
     text-align: center;
@@ -107,6 +108,12 @@ body {
     grid-column-end: 9;
     grid-row-start: 6;
     grid-row-end: 9;
+}
+.gallery__item--7 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 9;
+    grid-row-end: 11;
 }
 
 .container {
