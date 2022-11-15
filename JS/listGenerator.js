@@ -65,7 +65,7 @@ function getFromLocalStorage() {
 
 function toggle(id) {
     todos.forEach(function (item) {
-        if (item.id == id) {
+        if (item.id === id) {
             // toggle the value
             item.completed = !item.completed;
         }
@@ -75,7 +75,7 @@ function toggle(id) {
 
 function deleteTodo(id) {
     todos = todos.filter(function (item) {
-        return item.id != id;
+        return item.id !== id;
     });
     addToLocalStorage(todos);
 }
