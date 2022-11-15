@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>To do list</title>
     <link href="../CSS/listGenerator.css" rel="stylesheet">
+    <link href="../CSS/gallery.css" rel="stylesheet">
     <script defer src="../JS/listGenerator.js"></script>
     <script src="../JS/navigate_links.js"></script>
+    <script src="../JS/galleryMock.js"></script>
     <nav class="menu">
         <a href="myResume.html#about-me">Обо мне&ensp;</a>
         <a href="myResume.html#work-and-education">&ensp;Работа и образование&ensp;</a>
@@ -21,11 +23,21 @@
     <h1>ToDo List</h1>
 
     <form class="main__todo-form">
-            <input class="main__todo-input" type="text" placeholder="Add...">
+        <input class="main__todo-input" type="text" placeholder="Add...">
         <button class="main__add-button" type="submit">+</button>
     </form>
 
     <ul class="main__todo-items"></ul>
+</div>
+
+<h1>Mock gallery</h1>
+
+<div id="photos">
+
+    <div class="preloader">
+        <img src="../GIF/load.gif"/>
+        <p>Загрузка фото...</p>
+    </div>
 </div>
 
 </body>
