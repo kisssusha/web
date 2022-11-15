@@ -65,7 +65,7 @@ function getFromLocalStorage() {
 
 function toggle(id) {
     todos.forEach(function (item) {
-        if (item.id === id) {
+        if (item.id == id) {
             // toggle the value
             item.completed = !item.completed;
         }
@@ -75,7 +75,7 @@ function toggle(id) {
 
 function deleteTodo(id) {
     todos = todos.filter(function (item) {
-        return item.id !== id;
+        return item.id != id;
     });
     addToLocalStorage(todos);
 }
@@ -83,7 +83,7 @@ function deleteTodo(id) {
 getFromLocalStorage();
 
 todoItemsList.addEventListener('click', function (event) {
-    if (event.target.type === 'checkbox') {
+    if (event.target.type == 'checkbox') {
         // toggle the state
         toggle(event.target.parentElement.getAttribute('data-key'));
     }
