@@ -1,0 +1,297 @@
+* {
+    font-family: "Bodoni 72 Smallcaps", serif;
+    color: #4D220E;
+}
+
+body {
+
+    padding-top: 30px;
+    background-image: url(../myPictures/back.jpg);
+}
+
+H6 {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+header {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me-and-contacts {
+    margin-left: -90%;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1vw;
+    padding: 0;
+}
+
+.textOnMyPhoto {
+    position: relative;
+    width: 50%;
+}
+
+.textOnMyPhoto h1 {
+    position: absolute;
+    font-weight: 300;
+    top: 3%;
+    right: -5%;
+    margin: 0;
+    font-size: 3.5vw;
+    line-height: 0.7em;
+}
+
+.menu a {
+    text-decoration: none;
+    color: antiquewhite;
+    text-transform: uppercase;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.menu a:hover {
+    color: #4D220E;
+}
+
+.navigates {
+    scroll-margin-top: 160px;
+    background-color: #C4C8FD;
+}
+
+.menu {
+    font-size: 15px;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.myPersonalityTraits {
+    vertical-align: middle;
+}
+
+.mySkills ol {
+    display: inline-block;
+    background-color: #C4C8FD;
+    margin-left: 50px;
+    padding-right: 150px;
+}
+
+.mySkills h6 {
+    margin-top: 17%;
+    margin-left: 15%;
+    margin-bottom: -1%;
+}
+
+.language {
+    display: inline-block;
+    margin-left: 730px;
+    margin-bottom: 55px;
+}
+
+.language h6 {
+    margin-left: 4%;
+    margin-bottom: 0;
+    margin-top: 10%;
+}
+
+.languageOfProgramming {
+    display: inline-block;
+    margin-left: 730px;
+    margin-bottom: 0;
+}
+
+.languageOfProgramming p {
+    margin-bottom: 0;
+}
+
+.languageOfProgramming h6 {
+    margin-left: 4%;
+    margin-bottom: 0;
+    margin-top: 10%;
+}
+#load_time{
+    margin-right: 40%;
+    margin-left: 40%;
+}
+.expectationOfWork {
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.expectationOfWork h6 {
+    margin-left: 15%;
+}
+
+.expectationOfWork ul {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin-top: -6%;
+}
+
+.myPhoto {
+    height: 65%;
+    width: 65%;
+    padding-top: 30px;
+    margin-left: 30%;
+}
+
+.myContactsPictures {
+    width: 5vw;
+    height: 5vw;
+    transition: 1s;
+}
+
+.myContactsPictures:hover {
+    transform: scale(1.2);
+}
+
+.plainBackground {
+    display: block;
+    background-color: #F5E6CB;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    margin: 1% 3% 2% 5%;
+}
+
+
+@media only screen and (max-width: 648px), only screen and (max-device-width: 480px) {
+    .plainBackground {
+        display: block;
+        background-color: #F5E6CB;
+        margin: 2% 10%;
+        padding-bottom: 1%;
+    }
+
+    .myPhoto {
+        margin-top: 3%;
+        height: 160%;
+        width: 160%;
+    }
+
+    header {
+        display: inline-block;
+    }
+
+    header section {
+        margin-top: -5%;
+    }
+
+    .mySkills ol {
+        display: inline-block;
+        margin-left: 4%;
+        padding-right: 0;
+        padding-bottom: 1%;
+        margin-top: 2%;
+    }
+
+
+    .textOnMyPhoto {
+        position: relative;
+        margin-left: 10%;
+    }
+
+    .textOnMyPhoto h1 {
+        font-size: 30px;
+    }
+
+    .language {
+        display: block;
+        margin-left: 10%;
+        margin-bottom: 55px;
+    }
+
+    .languageOfProgramming {
+        display: inline-block;
+        margin-bottom: 0;
+        word-break: break-all;
+    }
+}
+
+@media only screen and (max-width: 724px) {
+    .language {
+        display: block;
+        margin-left: 10%;
+        font-size: 20px;
+        margin-bottom: 55px;
+    }
+
+    .myPhoto {
+        padding-top: 6%;
+        height: 90%;
+        width: 90%;
+    }
+
+    header {
+        display: block;
+    }
+
+    header section {
+        margin-left: 30%;
+    }
+
+    .languageOfProgramming {
+        display: block;
+        margin-left: 10%;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .plainBackground {
+        display: block;
+        background-color: #F5E6CB;
+        margin: 2% 10%;
+        padding-bottom: 1%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .language {
+        display: block;
+        margin-left: 40%;
+        font-size: 20px;
+        margin-bottom: 55px;
+    }
+
+    .languageOfProgramming {
+        display: block;
+        margin-left: 40%;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .about-me-and-contacts p {
+        margin-left: 20%;
+    }
+
+    .about-me-and-contacts h6 {
+        margin-left: 20%;
+        margin-bottom: -3%;
+    }
+
+    .about-me-and-contacts ul {
+        margin-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 1162px) {
+    .language {
+        margin-left: 45%;
+    }
+
+    .languageOfProgramming {
+        margin-left: 45%;
+    }
+
+    .about-me-and-contacts {
+        margin-left: -55%;
+    }
+}
