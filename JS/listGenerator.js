@@ -7,7 +7,7 @@ todoItemsList = document.querySelector('.main__todo-items');
 
 let todos = [];
 
-function addToDo(item) {
+const addToDo = (item) => {
     if (item !== '') {
         const todo = {
             id: Date.now(),
@@ -19,10 +19,9 @@ function addToDo(item) {
         addToLocalStorage(todos);
         todoInput.value = '';
     }
-
 }
 
-todoForm.addEventListener('submit', function (event) {
+todoForm.addEventListener('submit', (event) => {
     event.preventDefault();
     addToDo(todoInput.value);
 });
@@ -62,9 +61,9 @@ function getFromLocalStorage() {
     }
 }
 
-
 function toggle(id) {
     todos.forEach(function (item) {
+        console.log(item.id, id)
         if (item.id == id) {
             // toggle the value
             item.completed = !item.completed;

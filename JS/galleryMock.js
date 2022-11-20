@@ -9,8 +9,9 @@ window.addEventListener("load", async function loadUrl() {
     try {
         let response = await fetch('https://jsonplaceholder.typicode.com/photos')
         gallery = await response.json();
+        let counter = 0
         gallery = gallery.filter(function (item, index, array) {
-            return (item.id % getRandomInRange(90, 200) === 0);
+            return (counter++ < 20 && 1 == Math.round(Math.random()));
         });
     } catch (e) {
         const message = document.createElement("p")
@@ -19,6 +20,7 @@ window.addEventListener("load", async function loadUrl() {
         container.appendChild(message)
         return
     } finally {
+
         document.getElementsByClassName("preloader")[0].style.display = "none"
     }
     gallery.forEach(function (gal, i, gallery) {
