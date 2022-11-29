@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Мое хобби</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/threejs/r76/three.min.js"></script>
+
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="../JS/dataGraph.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/d3@6">
-    </script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
     <link href="../CSS/normalize.css" rel="stylesheet">
     <link href="../CSS/myHobby.css" rel="stylesheet">
+
 </head>
 <body>
 <nav class="menu">
@@ -18,6 +17,7 @@
     <a href="myResume.html#work-and-education">&ensp;Работа и образование&ensp;</a>
     <a href="myResume.html#expectationOfWork">&ensp;Ожидания от работы&ensp;</a>
     <a href="#hobby">&ensp;Xобби&ensp;</a><a href="toDoList.html#toDoList">&ensp;Таблицы&ensp;</a>
+    <a href="places.html#places">&ensp;Места</a>
 </nav>
 <header>
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -73,12 +73,24 @@
                         <p>6 pistalls</p>
                     </div>
             </figure>
+            <figure class="gallery__item gallery__item--8">
+                <button onclick="transition()">Update</button>
+                <svg height="500" width="500"></svg>
+            </figure>
+            <figure class="gallery__item gallery__item--9">
+                <p>JoJo's Bizarre Adventure (яп. ジョジョの奇妙な冒険 Дзёдзё но кимё:на бо:кэн, «Невероятные приключения ДжоДжо»[K 1]) — серия выпусков манги, автором и иллюстратором которой является Хирохико Араки. С 1987 по 2004 год серия публиковалась в журнале Weekly Shonen Jump, затем выпуск глав был перенесён в ежемесячный сэйнэн-журнал Ultra Jump[⇨]. JoJo’s Bizarre Adventure является второй в числе крупнейших серий манги издательства Shueisha и включает в себя 131 том, уступая лишь Kochikame, состоящей из 200 томов[2].
+
+                    История восьми частей манги разворачивается вокруг приключений Джонатана Джостара и его потомков: каждая часть представляет читателю отдельную историю и нового героя, способного применять в бою сверхъестественные способности. В манге также описаны события, происходящие в параллельной вселенной мира ДжоДжо </p>
+            <p>Вселенная JoJo’s Bizarre Adventure является отражением реального мира, в котором некоторые из людей способны преобразовывать внутреннюю духовную силу в «стенды» (яп. スタンド сутандо)[K 2], другая известная форма энергии — «хамон» (яп. 波紋 хамон).Многие имена персонажей и стендов взяты из названий известных рок-групп и певцов, исполняющих в стиле джаз, рок и хип-хоп</p>
+            </figure>
         </div>
     </div>
 </header>
 <main>
+
+    <script src="../JS/dataGraph.js"></script>
+
     <script src="../JS/navigate_links.js"></script>
-    <svg id="chart" width="200" height="100"></svg>
 </main>
 </body>
 </html>

@@ -45,7 +45,7 @@ body {
     margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(10, 10vw);
+    grid-template-rows: repeat(14, 10vw);
     grid-gap: 15px;
     list-style: none;
     text-align: center;
@@ -109,24 +109,37 @@ body {
     grid-row-start: 6;
     grid-row-end: 9;
 }
+
 .gallery__item--7 {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 9;
     grid-row-end: 11;
 }
+.gallery__item--8 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 11;
+    grid-row-end: 15;
+}
+.gallery__item--9 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 15;
+    font-family: "Bodoni 72 Smallcaps", serif;
+}
 
 .container {
     width: 80%;
     margin: 2rem auto;
-
 }
 
 .gallery figure {
     position: relative;
     width: 100%; /* Задаем ширину элемента списка с картинкой*/
     display: inline-block;
-    background-color: #fff;
+    background-color: #DC0055;
     margin: 0;
     box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
     overflow: hidden;
@@ -160,7 +173,16 @@ body {
     opacity: 1;
     transform: translate(0px, 0px) rotate(0deg);
 }
-#chart path {
-    fill: transparent;
-    stroke: green;
+
+button {
+    background-color:#DC0055;
+    color: antiquewhite;
+    border: solid antiquewhite;
+    padding: 1vh;
+    line-height: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+   margin-left: 30%;
+    margin-right: auto;
 }
