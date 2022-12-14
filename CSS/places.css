@@ -1,0 +1,12 @@
+.container{
+    margin: 5%;
+    position: absolute;
+    z-index: 7;
+}
+.column__name__of__place{
+    font-size: 20px;
+}
+#places{
+    margin-top: 2%;
+}
+
