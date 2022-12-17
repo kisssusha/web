@@ -28,8 +28,10 @@ const margin = {
 const width = svgWidth - margin.left - margin.right;
 const height = svgHeight - margin.top - margin.bottom;
 
-let svg = d3.select("svg").// выбор первого svg в документе
-    attr("width", svgWidth).attr("height", svgHeight);
+let svg = d3.select("svg")// выбор первого svg в документе
+    .attr("width", '100%')
+    .attr("height",'100%')
+    .attr("viewBox",[0, 0, width, height]);
 
 
 // генерация областей
@@ -106,29 +108,5 @@ function bump(a, n) {
         a[i] += x * Math.exp(-w * w);
     }
 }
-
-
-let chart = d3.select('#chart');
-d3.select(window)
-    .on("resize", function () {
-        let elem = document.getElementById("elem")
-        let targetWidth = elem.getBoundingClientRect().width;
-        let targetHeight = elem.getBoundingClientRect().height;
-
-        chart.attr("width", targetWidth);
-        chart.attr("height", targetHeight);
-        chart.attr("transform", "scale(1)")
-        area.x(x(targetWidth)).y0(y(targetHeight)).y1(y(targetHeight))
-
-        // var svg = d3.select("#chart")
-        //     .select("svg")
-        //     .selectAll("path")
-        //     .data(layers0);
-        // svg.enter()
-        //     .append("svg:path")
-        //     .attr('d', area)
-        // svg.exit().remove();
-        //
-    });
 
 
