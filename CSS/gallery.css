@@ -54,7 +54,6 @@ html {
 }
 .title_in_album img{
     margin-left: auto;
-    margin-left: auto;
 }
 .title_name_in_album{
     color: antiquewhite;
@@ -62,7 +61,7 @@ html {
     margin-top: 35px;
 }
 .photo_with_title {
-    display:block;
+    display: block;
     background: #D15E8A;
     border-radius: 10px;
     border-style: solid;
